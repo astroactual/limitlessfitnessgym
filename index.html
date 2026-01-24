@@ -189,7 +189,11 @@
           <h3>Join Limitless Fitness Today!</h3>
           <p>Fill out the form below to kickstart your fitness journey:</p>
           <!--add accessibility to the form-->
-          <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+          <form
+            action="https://wp.zybooks.com/form-viewer.php"
+            method="POST"
+            autocomplete="on"
+          >
             <label for="my-name"
               >Full Name<span class="required">*</span></label
             >
@@ -209,11 +213,27 @@
                   >*</span
                 >
               </legend>
-              <input type="radio" name="membership-type" id="monthly" checked />
+              <input
+                type="radio"
+                value="monthly"
+                name="membership-type"
+                id="monthly"
+                checked
+              />
               <label for="monthly">Monthly Membership</label>
-              <input type="radio" name="membership-type" id="annual" />
+              <input
+                type="radio"
+                value="annual"
+                name="membership-type"
+                id="annual"
+              />
               <label for="annual">Annual Membership</label>
-              <input type="radio" name="membership-type" id="family" />
+              <input
+                type="radio"
+                value="family"
+                name="membership-type"
+                id="family"
+              />
               <label for="family">Family & Group Plans</label>
             </fieldset>
             <label for="message">Tell us about your fitness goals:</label>
